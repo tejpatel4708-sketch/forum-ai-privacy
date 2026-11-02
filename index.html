@@ -1,0 +1,151 @@
+<!doctype html>
+<!-- Forum AI privacy policy. Plain HTML: no scripts, analytics, or external resources. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forum AI — Privacy Policy</title>
+<meta name="description" content="How the Forum AI app handles your information.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #f7f5f0;
+    --ink: #111319;
+    --muted: #5b5f68;
+    --rule: #dcd8cf;
+    --mark: #fff1a8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #16181d;
+      --ink: #ebe7e0;
+      --muted: #a4a39e;
+      --rule: #34363c;
+      --mark: #5c4d10;
+    }
+  }
+  html { background: var(--paper); }
+  body {
+    margin: 0 auto;
+    max-width: 680px;
+    padding: 48px 20px 80px;
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 40px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  .meta { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
+  .summary { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 16px 0; margin: 24px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; }
+  a { color: inherit; }
+  mark { background: var(--mark); color: inherit; padding: 0 3px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>Forum AI Privacy Policy</h1>
+<p class="meta">Effective November 6, 2026 · Forum AI is made by Tej Shishir Patel</p>
+
+<div class="summary">
+  <p><strong>In short:</strong> Your conversations and decisions are stored on your iPhone. To answer you, Forum sends what you write to its server and on to OpenAI, which writes the advisors' replies. Forum's server doesn't keep what you write. There is no tracking, no advertising, and no analytics. You can delete everything at any time in Settings.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Forum AI ("Forum", "we") is an iPhone app that helps you think through decisions with a small group of AI advisors. It is made by Tej Shishir Patel. You can reach us at <a href="mailto:support@wheremarketsthink.com">support@wheremarketsthink.com</a>.</p>
+
+<h2>What stays on your iPhone</h2>
+<p>Your conversations, the decisions you track (including the options, your choice, confidence, expectation, outcome, and looking-back answer), the links you make between decisions, and your communication preferences are stored in the app's private storage on your iPhone. Forum's server does not have a copy.</p>
+<p>Like other app data, this may be included in your iPhone's iCloud or computer backups, under Apple's terms. Deleting the app removes it from your iPhone, though existing backups may still contain it. Your anonymous account's sign-in token is kept in the iPhone's Keychain, which iOS does not clear when an app is deleted; if you reinstall Forum, the old token is discarded and a new anonymous account is used.</p>
+
+<h2>Before anything is sent</h2>
+<p>The first time you open Forum, it asks for your agreement before anything leaves your iPhone. If you choose "Not now", nothing is sent, and Forum can't answer questions until you agree.</p>
+
+<h2>Your anonymous account</h2>
+<p>When you agree, Forum creates an anonymous account with Supabase, the service that signs the app in to Forum's server. The account is a random identifier. It has no name, email address, or phone number. Forum uses it only to confirm that requests come from the app and to apply fair-use limits.</p>
+<p>Supabase may record technical information about sign-ins, such as IP addresses, in its logs. Supabase keeps these logs for 1 day. Forum's Supabase project is hosted in the United States (US East, Ohio).</p>
+
+<h2>What is sent when you ask a question</h2>
+<p>To generate replies, Forum sends:</p>
+<ul>
+  <li>your question and the discussion so far;</li>
+  <li>the decision you're tracking in that conversation, if any;</li>
+  <li>any of your other tracked decisions that Forum brings into the round because they relate to your question or because you linked them, and any recurring structure counted across them (for example, how many decisions involved the same topic and what you chose);</li>
+  <li>your communication preferences, as instructions to the advisors;</li>
+  <li>a random conversation identifier and round number, used only to total usage, and your anonymous account's sign-in token.</li>
+</ul>
+<p>This goes over an encrypted connection (HTTPS) to Forum's server, which is hosted by Railway in the Netherlands (EU West, Amsterdam). The server passes the text — and only the text — to OpenAI, which generates the advisors' replies. OpenAI does not receive your account identifier, the conversation identifier, your name, contact details, or device identifiers.</p>
+
+<h2>What Forum's server keeps</h2>
+<p>Forum's server does not store what you write or the replies. It keeps, in memory only:</p>
+<ul>
+  <li>a count of today's requests per anonymous account, to apply daily limits; it is cleared daily and whenever the server restarts.</li>
+</ul>
+<p>The server's operational logs record technical events — for example request counts, a shortened account identifier, and error codes — never the text of your questions or replies. Our hosting provider, Railway, also records standard request information in its HTTP logs — such as the IP address the request came from, the app's user agent, the request path, and the time. Railway keeps these logs, and the server's own logs, for 7 days.</p>
+
+<h2>OpenAI</h2>
+<p>OpenAI processes the text Forum sends in order to generate the advisors' replies. Under OpenAI's terms for its API, this data is not used to train OpenAI's models, and Forum has not opted in to share it for training. OpenAI may keep it for up to 30 days to monitor for abuse — longer only where the law requires — and then deletes it.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No tracking across other companies' apps or websites.</li>
+  <li>No advertising, and no advertising identifiers.</li>
+  <li>No analytics or crash-reporting services.</li>
+  <li>We never sell your information.</li>
+  <li>Forum does not access your contacts, photos, location, microphone, or camera.</li>
+</ul>
+
+<h2>How long information is kept</h2>
+<table>
+  <tr><th>Information</th><th>Where</th><th>How long</th></tr>
+  <tr><td>Conversations, decisions, links, preferences</td><td>Your iPhone</td><td>Until you delete them, delete all your data, or delete the app</td></tr>
+  <tr><td>Anonymous account</td><td>Supabase</td><td>Until you use "Delete all my data". Supabase does not remove unused anonymous accounts automatically.</td></tr>
+  <tr><td>Daily request counts</td><td>Forum's server, in memory</td><td>The current day, or until the server restarts</td></tr>
+  <tr><td>Server and HTTP logs</td><td>Railway</td><td>7 days</td></tr>
+  <tr><td>Sign-in and API logs</td><td>Supabase</td><td>1 day</td></tr>
+  <tr><td>Text sent for replies</td><td>OpenAI</td><td>Up to 30 days, for abuse monitoring</td></tr>
+</table>
+
+<h2>Your choices</h2>
+<ul>
+  <li><strong>Decline.</strong> Choose "Not now" on the first screen, and nothing is sent.</li>
+  <li><strong>Delete a conversation.</strong> Swipe to delete it from your conversation history.</li>
+  <li><strong>Delete all your data.</strong> In Settings, "Delete all my data" removes every conversation, decision, link, and preference from your iPhone and deletes your anonymous account. If Forum can't reach its server at that moment, your iPhone is still cleared, and the app tells you the account couldn't be removed; that account holds none of your conversations.</li>
+  <li><strong>Ask us.</strong> Email <a href="mailto:support@wheremarketsthink.com">support@wheremarketsthink.com</a> with any question or request about your information.</li>
+</ul>
+
+<h2>About the advisors</h2>
+<p>Forum's advisors are AI. They can be wrong and don't know your whole situation. Forum is not a substitute for professional medical, legal, financial, or mental-health advice. You can report a response from Settings → Report a response.</p>
+
+<h2>Children</h2>
+<p>Forum is not directed to children under 13, and we don't knowingly collect information from them.</p>
+
+<h2>Security</h2>
+<p>Information sent from the app travels over HTTPS. The keys that let Forum's server reach OpenAI and administer accounts are held on the server only and never ship in the app. Your sign-in token is stored in your iPhone's Keychain.</p>
+
+<h2>Where information is processed</h2>
+<p>Forum is operated from the United States. Forum's server runs in the Netherlands (EU), and its sign-in service, Supabase, runs in the United States (Ohio). OpenAI may process information in the United States and other countries. This may be outside the country where you live.</p>
+
+<h2>Your rights</h2>
+<p>Wherever you live, you can:</p>
+<ul>
+  <li><strong>See what Forum holds.</strong> Your conversations and decisions are on your iPhone, where you can read them at any time. Forum's server holds no conversation content; it knows only your anonymous account identifier. To ask what we hold about you, email <a href="mailto:support@wheremarketsthink.com">support@wheremarketsthink.com</a>.</li>
+  <li><strong>Delete it.</strong> Use Settings → Delete all my data, or email us.</li>
+  <li><strong>Withdraw your agreement.</strong> Deleting all your data removes your agreement, and Forum sends nothing more until you agree again.</li>
+</ul>
+<p>If you are in the UK or the European Economic Area, Forum processes what you send on the basis of your consent and to provide the service you ask for. You also have the right to complain to your local data protection authority — in the UK, the Information Commissioner's Office (ico.org.uk).</p>
+<p>If you are in California: Forum does not sell or share your personal information, as those terms are defined under California law.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, we'll update this page and its effective date. If a change affects what Forum sends or to whom, the app will ask for your agreement again before sending anything.</p>
+
+<h2>Contact</h2>
+<p>Tej Shishir Patel · <a href="mailto:support@wheremarketsthink.com">support@wheremarketsthink.com</a></p>
+
+</body>
+</html>
